@@ -4,7 +4,7 @@ import os
 
 for file in os.listdir():
 
-    json_file_path = f'C:\\Users\\15164\\Desktop\\pythonscripts\\{file}'
+    json_file_path = f'C:\\Users\\Desktop\\pythonscripts\\{file}'
 
 
     if file == "jsonslicer.py":
@@ -20,7 +20,7 @@ for file in os.listdir():
             #arbitrary alterations here
         name = data ['name']
         name = name.removeprefix("Image #")        
-        data['image'] = f"https://arweave.net/M77ucsu59AfY0fulXXWS9_q3EOC4a9W9HEKvWJsINyc/{name}.png"
+        data['image'] = f"https://arweave.net/path/{name}.png"
 
         print (name)
 
